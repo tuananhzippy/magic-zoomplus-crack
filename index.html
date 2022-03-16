@@ -6,8 +6,7 @@
 <title>Magic Zoom Plus</title>
 
 <link href="magiczoomplus/magiczoomplus.css" rel="stylesheet" type="text/css" media="screen"/>
-<!-- <script src="magiczoomplus/magiczoomplus.js" type="text/javascript"></script> -->
-<script src="magiczoomplus/test.js" type="text/javascript"></script>
+<script src="magiczoomplus/magiczoomplus.js" type="text/javascript"></script>
 
 <style type="text/css">
     html { position: relative; min-height: 100%; }
@@ -301,22 +300,22 @@
     var mzOptions = {};
     mzOptions = {
         onZoomReady: function() {
-            // console.log('onReady', arguments[0]);
+            console.log('onReady', arguments[0]);
         },
         onUpdate: function() {
-            // console.log('onUpdated', arguments[0], arguments[1], arguments[2]);
+            console.log('onUpdated', arguments[0], arguments[1], arguments[2]);
         },
         onZoomIn: function() {
-            // console.log('onZoomIn', arguments[0]);
+            console.log('onZoomIn', arguments[0]);
         },
         onZoomOut: function() {
-            // console.log('onZoomOut', arguments[0]);
+            console.log('onZoomOut', arguments[0]);
         },
         onExpandOpen: function() {
-            // console.log('onExpandOpen', arguments[0]);
+            console.log('onExpandOpen', arguments[0]);
         },
         onExpandClose: function() {
-            // console.log('onExpandClosed', arguments[0]);
+            console.log('onExpandClosed', arguments[0]);
         }
     };
     var mzMobileOptions = {};
@@ -425,14 +424,6 @@
         return document.queryCommandSupported('copy');
     }
 </script>
-<style>
-	.MagicZoom { 
-        display: none; 
-    }
-    .MagicZoom.Active { 
-        display: block; 
-    }
-</style>
 </head>
 <body>
 <div class="preview col">
@@ -448,38 +439,68 @@
     </div>
 
     <div class="app-figure" id="zoom-fig">
-        <a id="Zoom-1" class="MagicZoom Active" title="Show your product in stunning detail with Magic Zoom Plus."
-            href="https://magictoolbox.sirv.com/images/magiczoomplus/jeans-1-z.jpg">
-            <img src="https://magictoolbox.sirv.com/images/magiczoomplus/jeans-1-z.jpg?scale.height=400" alt=""/>
+        <a id="Zoom-1" class="MagicZoom" title="Show your product in stunning detail with Magic Zoom Plus."
+            href="https://magictoolbox.sirv.com/images/magiczoomplus/colorful-colors-1.jpg?h=1400"
+            data-zoom-image-2x="https://magictoolbox.sirv.com/images/magiczoomplus/colorful-colors-1.jpg?h=2800"
+            data-image-2x="https://magictoolbox.sirv.com/images/magiczoomplus/colorful-colors-1.jpg?h=800"
+        >
+            <img src="https://magictoolbox.sirv.com/images/magiczoomplus/colorful-colors-1.jpg?h=400" srcset="https://magictoolbox.sirv.com/images/magiczoomplus/colorful-colors-1.jpg?h=800 2x"
+                alt=""/>
         </a>
-		<div data-slide-id="Video-1" class="MagicZoom">
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/VfE31QgEUXg" frameborder="0" allowfullscreen></iframe>
-		</div>
         <div class="selectors">
-			<a data-zoom-id="Zoom-1" href="https://magictoolbox.sirv.com/images/magiczoomplus/jeans-1-z.jpg" data-image="https://magictoolbox.sirv.com/images/magiczoomplus/jeans-1-z.jpg?scale.height=400">
-                <img srcset="https://magictoolbox.sirv.com/images/magiczoomplus/jeans-1-z.jpg?scale.width=112 2x" src="https://magictoolbox.sirv.com/images/magiczoomplus/jeans-1-z.jpg?scale.width=56"/>
+            <a
+                data-zoom-id="Zoom-1"
+                href="https://magictoolbox.sirv.com/images/magiczoomplus/colorful-colors-1.jpg?h=1400"
+                data-image="https://magictoolbox.sirv.com/images/magiczoomplus/colorful-colors-1.jpg?h=400"
+                data-zoom-image-2x="https://magictoolbox.sirv.com/images/magiczoomplus/colorful-colors-1.jpg?h=2800"
+                data-image-2x="https://magictoolbox.sirv.com/images/magiczoomplus/colorful-colors-1.jpg?h=800"
+            >
+                <img srcset="https://magictoolbox.sirv.com/images/magiczoomplus/colorful-colors-1.jpg?h=120 2x" src="https://magictoolbox.sirv.com/images/magiczoomplus/colorful-colors-1.jpg?h=60"/>
             </a>
-			<a data-zoom-id="Zoom-1" href="https://magictoolbox.sirv.com/images/magiczoomplus/jeans-5-z.jpg" data-image="https://magictoolbox.sirv.com/images/magiczoomplus/jeans-5-z.jpg?scale.height=400">
-                <img srcset="https://magictoolbox.sirv.com/images/magiczoomplus/jeans-5-z.jpg?scale.width=112 2x" src="https://magictoolbox.sirv.com/images/magiczoomplus/jeans-5-z.jpg?scale.width=56"/>
+            <a
+                data-zoom-id="Zoom-1"
+                href="https://magictoolbox.sirv.com/images/magiczoomplus/colorful-colors-2.jpg?h=1400"
+                data-image="https://magictoolbox.sirv.com/images/magiczoomplus/colorful-colors-2.jpg?h=400"
+                data-zoom-image-2x="https://magictoolbox.sirv.com/images/magiczoomplus/colorful-colors-2.jpg?h=2800"
+                data-image-2x="https://magictoolbox.sirv.com/images/magiczoomplus/colorful-colors-2.jpg?h=800"
+            >
+                <img srcset="https://magictoolbox.sirv.com/images/magiczoomplus/colorful-colors-2.jpg?h=120 2x" src="https://magictoolbox.sirv.com/images/magiczoomplus/colorful-colors-2.jpg?h=60"/>
             </a>
-			<a data-zoom-id="Zoom-1" href="https://magictoolbox.sirv.com/images/magiczoomplus/jeans-6-z.jpg" data-image="https://magictoolbox.sirv.com/images/magiczoomplus/jeans-6-z.jpg?scale.height=400">
-                <img srcset="https://magictoolbox.sirv.com/images/magiczoomplus/jeans-6-z.jpg?scale.width=112 2x" src="https://magictoolbox.sirv.com/images/magiczoomplus/jeans-6-z.jpg?scale.width=56"/>
+            <a
+                data-zoom-id="Zoom-1"
+                href="https://magictoolbox.sirv.com/images/magiczoomplus/colorful-colors-3.jpg?h=1400"
+                data-image="https://magictoolbox.sirv.com/images/magiczoomplus/colorful-colors-3.jpg?h=400"
+                data-zoom-image-2x="https://magictoolbox.sirv.com/images/magiczoomplus/colorful-colors-3.jpg?h=2800"
+                data-image-2x="https://magictoolbox.sirv.com/images/magiczoomplus/colorful-colors-3.jpg?h=800"
+            >
+                <img srcset="https://magictoolbox.sirv.com/images/magiczoomplus/colorful-colors-3.jpg?h=120 2x" src="https://magictoolbox.sirv.com/images/magiczoomplus/colorful-colors-3.jpg?h=60"/>
             </a>
-			<a data-zoom-id="Zoom-1" href="https://magictoolbox.sirv.com/images/magiczoomplus/jeans-7-z.jpg"
-                data-image="https://magictoolbox.sirv.com/images/magiczoomplus/jeans-7-z.jpg?scale.height=400">
-                <img srcset="https://magictoolbox.sirv.com/images/magiczoomplus/jeans-7-z.jpg?scale.width=112 2x" src="https://magictoolbox.sirv.com/images/magiczoomplus/jeans-7-z.jpg?scale.width=56"/>
+            <a
+                data-zoom-id="Zoom-1"
+                href="https://magictoolbox.sirv.com/images/magiczoomplus/colorful-colors-4.jpg?h=1400"
+                data-image="https://magictoolbox.sirv.com/images/magiczoomplus/colorful-colors-4.jpg?h=400"
+                data-zoom-image-2x="https://magictoolbox.sirv.com/images/magiczoomplus/colorful-colors-4.jpg?h=2800"
+                data-image-2x="https://magictoolbox.sirv.com/images/magiczoomplus/colorful-colors-4.jpg?h=800"
+            >
+                <img srcset="https://magictoolbox.sirv.com/images/magiczoomplus/colorful-colors-4.jpg?h=120 2x" src="https://magictoolbox.sirv.com/images/magiczoomplus/colorful-colors-4.jpg?h=60"/>
             </a>
-			<a data-zoom-id="Zoom-1" href="https://magictoolbox.sirv.com/images/magiczoomplus/jeans-8-z.jpg" data-image="https://magictoolbox.sirv.com/images/magiczoomplus/jeans-8-z.jpg?scale.height=400">
-                <img srcset="https://magictoolbox.sirv.com/images/magiczoomplus/jeans-8-z.jpg?scale.width=112 2x" src="https://magictoolbox.sirv.com/images/magiczoomplus/jeans-8-z.jpg?scale.width=56"/>
+            <a
+                data-zoom-id="Zoom-1"
+                href="https://magictoolbox.sirv.com/images/magiczoomplus/colorful-colors-5.jpg?h=1400"
+                data-image="https://magictoolbox.sirv.com/images/magiczoomplus/colorful-colors-5.jpg?h=400"
+                data-zoom-image-2x="https://magictoolbox.sirv.com/images/magiczoomplus/colorful-colors-5.jpg?h=2800"
+                data-image-2x="https://magictoolbox.sirv.com/images/magiczoomplus/colorful-colors-5.jpg?h=800"
+            >
+                <img srcset="https://magictoolbox.sirv.com/images/magiczoomplus/colorful-colors-5.jpg?h=120 2x" src="https://magictoolbox.sirv.com/images/magiczoomplus/colorful-colors-5.jpg?h=60"/>
             </a>
-			<a data-zoom-id="Zoom-1" href="https://magictoolbox.sirv.com/images/magiczoomplus/jeans-2-z.jpg" data-image="https://magictoolbox.sirv.com/images/magiczoomplus/jeans-2-z.jpg?scale.height=400">
-                <img srcset="https://magictoolbox.sirv.com/images/magiczoomplus/jeans-2-z.jpg?scale.width=112 2x" src="https://magictoolbox.sirv.com/images/magiczoomplus/jeans-2-z.jpg?scale.width=56"/>
-            </a>
-			<a data-zoom-id="Zoom-1" href="https://magictoolbox.sirv.com/images/magiczoomplus/jeans-3-z.jpg" data-image="https://magictoolbox.sirv.com/images/magiczoomplus/jeans-3-z.jpg?scale.height=400">
-                <img srcset="https://magictoolbox.sirv.com/images/magiczoomplus/jeans-3-z.jpg?scale.width=112 2x" src="https://magictoolbox.sirv.com/images/magiczoomplus/jeans-3-z.jpg?scale.width=56"/>
-            </a>
-			<a data-zoom-id="Zoom-1" href="https://magictoolbox.sirv.com/images/magiczoomplus/jeans-4-z.jpg" data-image="https://magictoolbox.sirv.com/images/magiczoomplus/jeans-4-z.jpg?scale.height=400">
-                <img srcset="https://magictoolbox.sirv.com/images/magiczoomplus/jeans-4-z.jpg?scale.width=112 2x" src="https://magictoolbox.sirv.com/images/magiczoomplus/jeans-4-z.jpg?scale.width=56"/>
+            <a
+                data-zoom-id="Zoom-1"
+                href="https://magictoolbox.sirv.com/images/magiczoomplus/colorful-colors-6.jpg?h=1400"
+                data-image="https://magictoolbox.sirv.com/images/magiczoomplus/colorful-colors-6.jpg?h=400"
+                data-zoom-image-2x="https://magictoolbox.sirv.com/images/magiczoomplus/colorful-colors-6.jpg?h=2800"
+                data-image-2x="https://magictoolbox.sirv.com/images/magiczoomplus/colorful-colors-6.jpg?h=800"
+            >
+                <img srcset="https://magictoolbox.sirv.com/images/magiczoomplus/colorful-colors-6.jpg?h=120 2x" src="https://magictoolbox.sirv.com/images/magiczoomplus/colorful-colors-6.jpg?h=60"/>
             </a>
         </div>
     </div>
@@ -577,7 +598,7 @@
                     <option selected="selected" value="window">window</option>
                     <option value="fullscreen">fullscreen</option>
                     <option value="off">off</option>
-
+                    
                 </select>
             </td>
         </tr>
@@ -588,7 +609,7 @@
                     <option selected="selected" value="zoom">zoom</option>
                     <option value="magnifier">magnifier</option>
                     <option value="off">off</option>
-
+                    
                 </select>
             </td>
         </tr>
@@ -598,7 +619,7 @@
                 <select name="expandZoomOn" >
                     <option selected="selected" value="click">click</option>
                     <option value="always">always</option>
-
+                    
                 </select>
             </td>
         </tr>
@@ -608,7 +629,7 @@
                 <select name="expandCaption" >
                     <option selected="selected" value="true">true</option>
                     <option value="false">false</option>
-
+                    
                 </select>
             </td>
         </tr>
@@ -618,7 +639,17 @@
                 <select name="closeOnClickOutside" >
                     <option selected="selected" value="true">true</option>
                     <option value="false">false</option>
-
+                    
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>history</td>
+            <td>
+                <select name="history" >
+                    <option selected="selected" value="true">true</option>
+                    <option value="false">false</option>
+                    
                 </select>
             </td>
         </tr>
@@ -746,11 +777,11 @@
         </tr>
         <tr>
             <td>textClickZoomHint</td>
-            <td><input type="text" name="textClickZoomHint" value="Double tap to zoom"></td>
+            <td><input type="text" name="textClickZoomHint" value="Double tap or pinch to zoom"></td>
         </tr>
         <tr>
             <td>textExpandHint</td>
-            <td><input type="text" name="textExpandHint" value="Tap to expand" ></td>
+            <td><input type="text" name="textExpandHint" value="Tap or pinch to expand" ></td>
         </tr>
         </table>
         </form>
@@ -758,7 +789,5 @@
     <div class="footer">&copy; <a href="https://www.magictoolbox.com">Magic Toolbox</a></div>
 </div>
 <div id="code-to-copy"></div>
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css">
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prettify/188.0.0/prettify.min.js"></script>
 <script>try { prettyPrint(); } catch(e) {}</script>
 </body></html>
